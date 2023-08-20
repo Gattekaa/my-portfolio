@@ -13,7 +13,7 @@ export default function ConnectWithMeContainer() {
         <h3 className="font-medium">Vinicius Gabriel</h3>
         <p>FullStack Developer</p>
         <div className="text-sm">
-          <p>Higly skilled full stack developer with expertise</p>
+          <p>Highly skilled full stack developer with expertise</p>
           <p> in both front-end and back-end development.</p>
         </div>
         <div className="w-full flex gap-2 justify-center mt-2">

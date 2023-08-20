@@ -6,7 +6,7 @@ export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false)
   const handleNavbarOpen = () => setNavbarOpen(!navbarOpen)
   return (
-    <nav className="flex w-full items-center justify-between flex-wrap bg-background-light z-[10] py-6 p-8 md:px-24 border-b-2 border-b-border-light sticky top-0 left-0">
+    <nav className="flex w-full items-center justify-between flex-wrap bg-background-light z-[10] py-6 p-8 lg:px-24 border-b-2 border-b-border-light sticky top-0 left-0">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
         <span className="font-bold text-xl tracking-tight animate-gradient">
           &lt;Vinicius/&gt;
@@ -22,35 +22,35 @@ export default function Navbar() {
       </div>
       <div className={`hidden lg:flex lg:items-center`}>
         <div className="flex gap-4">
-          <a href="#" className="text-gray-500 hover:text-gray-300 mr-4">
+          <a href="#" className="text-background-dark hover:text-background-dark/40 duration-150 mr-4">
             Home
           </a>
-          <a href="#responsive-header" className="text-gray-500 hover:text-gray-300 mr-4">
-            Technologies
+          <a href="/#explore-my-work" className="text-background-dark hover:text-background-dark/40 duration-150">
+            Explore my work
           </a>
-          <a href="#responsive-header" className="text-gray-500 hover:text-gray-300">
-            Blog
-          </a>
-          <a href="#connect-with-me" className="text-gray-500 hover:text-gray-300">
+          <a href="/#connect-with-me" className="text-background-dark hover:text-background-dark/40 duration-150">
             Connect with me
+          </a>
+          <a href="/#technologies" className="text-background-dark hover:text-background-dark/40 duration-150 mr-4">
+            Technologies
           </a>
         </div>
       </div>
       {
         navbarOpen && (
-          <div className={`lg:hidden animate-scale-up w-full ${navbarOpen ? 'absolute block pt-4 pb-8 px-8 md:px-24 bg-background-light border-b-2 border-b-border-light' : 'hidden'}  top-[75%] left-0 lg:flex lg:items-center`}>
+          <div className={`lg:hidden animate-scale-up w-full ${navbarOpen ? 'absolute block pt-4 pb-8 px-8 lg:px-24 bg-background-light border-b-2 border-b-border-light' : 'hidden'}  top-[75%] left-0 lg:flex lg:items-center`}>
             <div className="flex flex-col gap-4">
-              <a href="#" className="text-gray-500 hover:text-gray-300 mr-4">
+              <a onClick={handleNavbarOpen} href="/#" className="text-background-dark hover:text-background-dark/40 duration-150 mr-4">
                 Home
               </a>
-              <a href="#responsive-header" className="text-gray-500 hover:text-gray-300 mr-4">
-                Technologies
+              <a onClick={handleNavbarOpen} href="/#explore-my-work" className="text-background-dark hover:text-background-dark/40 duration-150">
+                Explore my work
               </a>
-              <a href="#responsive-header" className="text-gray-500 hover:text-gray-300">
-                Blog
-              </a>
-              <a href="#connect-with-me" className="text-gray-500 hover:text-gray-300">
+              <a onClick={handleNavbarOpen} href="/#connect-with-me" className="text-background-dark hover:text-background-dark/40 duration-150">
                 Connect with me
+              </a>
+              <a onClick={handleNavbarOpen} href="/#technologies" className="text-background-dark hover:text-background-dark/40 duration-150 mr-4">
+                Technologies
               </a>
             </div>
           </div>

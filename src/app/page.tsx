@@ -6,7 +6,7 @@ import Technologies from '@/components/Technologies'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center bg-background-surface">
+    <main className="flex min-h-screen flex-col items-center bg-background-surface text-background-dark">
       <Navbar />
       <PresentationContainer />
       <ExploreMyWork />
