@@ -3,6 +3,8 @@ import PresentationContainer from '@/components/PresentationContainer'
 import ConnectWithMeContainer from '../components/ConnectWithMeContainer'
 import ExploreMyWork from '@/components/ExploreMyWork'
 import Technologies from '@/components/Technologies'
+import Footer from '@/components/Footer'
+import ScrollTo from '@/components/ScrollTo'
 
 export default function Home() {
   return (
@@ -10,8 +12,10 @@ export default function Home() {
       <Navbar />
       <PresentationContainer />
       <ExploreMyWork />
-      <ConnectWithMeContainer />
       <Technologies />
+      <ConnectWithMeContainer />
+      <ScrollTo />
+      <Footer />
     </main>
   )
 }

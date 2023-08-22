@@ -16,7 +16,7 @@ export default function Technologies() {
   return (
     <Splide
       id="technologies"
-      className="w-full opacity-80 py-12 bg-background-light border-y-2 border-y-background-dark/20"
+      className="w-full opacity-80 py-8 bg-background-light border-y-2 border-y-background-dark/20"
       options={{
         type: "loop",
         gap: "10px",

@@ -28,10 +28,16 @@ const config: Config = {
           "0%": { transform: "scaleY(0.4)", transformOrigin: "100% 0%" },
           "100%": { transform: "scaleY(1)", transformOrigin: "100% 0%" },
         },
+        "fade-in": {
+          "0%": { opacity: '0' },
+          "100%": { opacity: '1' },
+        },
       },
       animation: {
         "scale-up":
           "scale-up 0.16s cubic-bezier(0.390, 0.575, 0.565, 1.000) both",
+        "fade-in":
+          "fade-in 0.16s cubic-bezier(0.390, 0.575, 0.565, 1.000) both",
       },
     },
   },

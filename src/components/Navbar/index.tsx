@@ -1,16 +1,17 @@
 'use client'
 import { TextAlignRight, TextAlignLeft } from "@phosphor-icons/react"
+import Link from "next/link"
 import { useState } from "react"
 
 export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false)
   const handleNavbarOpen = () => setNavbarOpen(!navbarOpen)
   return (
-    <nav className="flex w-full items-center justify-between flex-wrap bg-background-light z-[10] py-6 p-8 lg:px-24 border-b-2 border-b-border-light sticky top-0 left-0">
+    <nav className="flex w-full items-center justify-between flex-wrap bg-background-light z-[100] py-6 p-8 lg:px-24 border-b-2 border-b-border-light sticky top-0 left-0">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
-        <span className="font-bold text-xl tracking-tight animate-gradient">
+        <Link href={'/'} className="font-bold text-xl tracking-tight animate-gradient">
           &lt;Vinicius/&gt;
-        </span>
+        </Link>
       </div>
       <div className="block lg:hidden">
 
@@ -28,11 +29,11 @@ export default function Navbar() {
           <a href="/#explore-my-work" className="text-background-dark hover:text-background-dark/40 duration-150">
             Explore my work
           </a>
-          <a href="/#connect-with-me" className="text-background-dark hover:text-background-dark/40 duration-150">
-            Connect with me
-          </a>
           <a href="/#technologies" className="text-background-dark hover:text-background-dark/40 duration-150 mr-4">
             Technologies
+          </a>
+          <a href="/#connect-with-me" className="text-background-dark hover:text-background-dark/40 duration-150">
+            Connect with me
           </a>
         </div>
       </div>
@@ -46,11 +47,11 @@ export default function Navbar() {
               <a onClick={handleNavbarOpen} href="/#explore-my-work" className="text-background-dark hover:text-background-dark/40 duration-150">
                 Explore my work
               </a>
-              <a onClick={handleNavbarOpen} href="/#connect-with-me" className="text-background-dark hover:text-background-dark/40 duration-150">
-                Connect with me
-              </a>
               <a onClick={handleNavbarOpen} href="/#technologies" className="text-background-dark hover:text-background-dark/40 duration-150 mr-4">
                 Technologies
+              </a>
+              <a onClick={handleNavbarOpen} href="/#connect-with-me" className="text-background-dark hover:text-background-dark/40 duration-150">
+                Connect with me
               </a>
             </div>
           </div>
