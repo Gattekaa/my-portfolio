@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
@@ -29,8 +29,12 @@ const config: Config = {
           "100%": { transform: "scaleY(1)", transformOrigin: "100% 0%" },
         },
         "fade-in": {
-          "0%": { opacity: '0' },
-          "100%": { opacity: '1' },
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        "language-spin": {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
         },
       },
       animation: {
@@ -38,9 +42,11 @@ const config: Config = {
           "scale-up 0.16s cubic-bezier(0.390, 0.575, 0.565, 1.000) both",
         "fade-in":
           "fade-in 0.16s cubic-bezier(0.390, 0.575, 0.565, 1.000) both",
+        "language-spin":
+          "language-spin 1s cubic-bezier(.75,-0.5,0,1.75) both",
       },
     },
   },
   plugins: [],
 };
-export default config
+export default config;

@@ -1,6 +1,17 @@
 'use client'
-import { InstagramLogo, LinkedinLogo, WhatsappLogo } from "@phosphor-icons/react";
+
+// NextJS
 import Link from "next/link";
+
+// Icons
+import { InstagramLogo, LinkedinLogo, WhatsappLogo } from "@phosphor-icons/react";
+
+// Helpers
+import Locale from "@/helpers/locale";
+
+// Locales
+import { FooterLocale } from "@/locales/footer";
+import { NavigationLocale } from "@/locales/navigation";
 
 export default function Footer() {
   return (
@@ -10,25 +21,26 @@ export default function Footer() {
           &lt;Vinicius/&gt;
         </Link>
         <section className="flex flex-col gap-4">
-          <h2 className="pb-4 font-medium text-base">Navigation</h2>
+          <h2 className="pb-4 font-medium text-base">
+            <Locale item={FooterLocale.navigation} />
+          </h2>
           <Link href="/#" className="flex gap-2 items-center hover:opacity-80 duration-150">
-            Home
+            <Locale item={NavigationLocale.home} />
           </Link>
           <Link href={'/#explore-my-work'} className="flex gap-2 items-center hover:opacity-80 duration-150">
-            Explore my work
+            <Locale item={NavigationLocale.explore_my_work} />
           </Link>
           <Link href={'/#connect-with-me'} className="flex gap-2 items-center hover:opacity-80 duration-150">
-            Connect with me
+            <Locale item={NavigationLocale.connect_with_me} />
           </Link>
           <Link href={'/#technologies'} className="flex gap-2 items-center hover:opacity-80 duration-150">
-            Technologies
-          </Link>
-          <Link href={'/#footer'} className="flex gap-2 items-center hover:opacity-80 duration-150">
-            Footer
+            <Locale item={NavigationLocale.technologies} />
           </Link>
         </section>
         <section className="flex flex-col gap-4">
-          <h2 className="pb-4 font-medium text-base">Follow me</h2>
+          <h2 className="pb-4 font-medium text-base">
+            <Locale item={FooterLocale.follow_me} />
+          </h2>
           <Link target="_blank" href={'https://www.linkedin.com/in/vinicius-gabriel-76a991216/'} className="flex gap-2 items-center hover:opacity-80 duration-150">
             <LinkedinLogo size={24} className="hover:opacity-40 duration-150" />
             <p>LinkedIn</p>
@@ -49,25 +61,26 @@ export default function Footer() {
         </Link>
         <div className="w-full flex justify-between">
           <section className="flex flex-col gap-4">
-            <h2 className="pb-4 font-medium text-base">Navigation</h2>
+            <h2 className="pb-4 font-medium text-base">
+              <Locale item={FooterLocale.navigation} />
+            </h2>
             <Link href="/#" className="flex gap-2 items-center hover:opacity-80 duration-150">
-              Home
+              <Locale item={NavigationLocale.home} />
             </Link>
             <Link href={'/#explore-my-work'} className="flex gap-2 items-center hover:opacity-80 duration-150">
-              Explore my work
+              <Locale item={NavigationLocale.explore_my_work} />
             </Link>
             <Link href={'/#connect-with-me'} className="flex gap-2 items-center hover:opacity-80 duration-150">
-              Connect with me
+              <Locale item={NavigationLocale.connect_with_me} />
             </Link>
             <Link href={'/#technologies'} className="flex gap-2 items-center hover:opacity-80 duration-150">
-              Technologies
-            </Link>
-            <Link href={'/#footer'} className="flex gap-2 items-center hover:opacity-80 duration-150">
-              Footer
+              <Locale item={NavigationLocale.technologies} />
             </Link>
           </section>
           <section className="flex flex-col gap-4">
-            <h2 className="pb-4 font-medium text-base">Follow me</h2>
+            <h2 className="pb-4 font-medium text-base">
+              <Locale item={FooterLocale.follow_me} />
+            </h2>
             <Link target="_blank" href={'https://www.linkedin.com/in/vinicius-gabriel-76a991216/'} className="flex gap-2 items-center hover:opacity-80 duration-150">
               <LinkedinLogo size={24} className="hover:opacity-40 duration-150" />
               <p>LinkedIn</p>
