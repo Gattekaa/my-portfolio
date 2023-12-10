@@ -32,13 +32,13 @@ export default function ConnectWithMeContainer() {
           <Locale item={connect_with_me.description} />
         </div>
         <div className="w-full flex gap-2 justify-center mt-2">
-          <Link target="_blank" href={'https://www.linkedin.com/in/vinicius-gabriel-76a991216/'}>
+          <Link aria-label="Find me on LinkedIn" target="_blank" href={'https://www.linkedin.com/in/vinicius-gabriel-76a991216/'}>
             <LinkedinLogo size={32} className="hover:opacity-60 duration-150" />
           </Link>
-          <Link target="_blank" href={'https://https://www.instagram.com/vinihbieel/'}>
+          <Link aria-label="Find me on Instagram" target="_blank" href={'https://https://www.instagram.com/vinihbieel/'}>
             <InstagramLogo size={32} className="hover:opacity-60 duration-150" />
           </Link>
-          <Link target="_blank" href={'https://api.whatsapp.com/send?phone=5513992077498'}>
+          <Link aria-label="Find me on WhatsApp" target="_blank" href={'https://api.whatsapp.com/send?phone=5513992077498'}>
             <WhatsappLogo size={32} className="hover:opacity-60 duration-150" />
           </Link>
         </div>

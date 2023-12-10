@@ -52,17 +52,17 @@ export default function Navbar() {
       </div>
       <div className="lg:hidden flex gap-8">
         <div className="group relative flex justify-center">
-          <button onClick={() => setLanguageDropdownOpen(!languageDropdownOpen)} onBlur={handleLanguageBlur} className="hover:opacity-80 duration-150">
+          <button aria-label="Change Language" onClick={() => setLanguageDropdownOpen(!languageDropdownOpen)} onBlur={handleLanguageBlur} className="hover:opacity-80 duration-150">
             <GlobeHemisphereEast size={28} weight="duotone" color="#4AA5E0" className="duration-150 group-focus-within:animate-language-spin" />
           </button>
           {
             languageDropdownOpen && (
               <Dropdown>
-                <button onClick={() => handleLanguagueChange('en')} className="w-[142px] hover:bg-background-dark/5 duration-150 px-3 py-2 flex items-center gap-3">
+                <button aria-label="Change language to English" onClick={() => handleLanguagueChange('en')} className="w-[142px] hover:bg-background-dark/5 duration-150 px-3 py-2 flex items-center gap-3">
                   <Image src={usa_flag} alt="USA flag" width={20} />
                   English
                 </button>
-                <button onClick={() => handleLanguagueChange('pt_br')} className="w-[142px] hover:bg-background-dark/5 duration-150 px-3 py-2 flex items-center gap-3">
+                <button aria-label="Mudar idioma para Português" onClick={() => handleLanguagueChange('pt_br')} className="w-[142px] hover:bg-background-dark/5 duration-150 px-3 py-2 flex items-center gap-3">
                   <Image src={brazil_flag} alt="Brazil flag" width={20} />
 
                   Português
@@ -71,7 +71,7 @@ export default function Navbar() {
             )
           }
         </div>
-        <button onClick={handleNavbarOpen} className="">
+        <button aria-label="Toggle Navbar" onClick={handleNavbarOpen} className="">
           {
             navbarOpen ? <TextAlignLeft size={32} /> : <TextAlignRight size={32} />
           }
@@ -93,17 +93,17 @@ export default function Navbar() {
             <Locale item={NavigationLocale.connect_with_me} />
           </a>
           <div className="group relative flex justify-center">
-            <button onClick={() => setLanguageDropdownOpen(!languageDropdownOpen)} onBlur={handleLanguageBlur} className="hover:opacity-80 duration-150">
+            <button aria-label="Change Language" onClick={() => setLanguageDropdownOpen(!languageDropdownOpen)} onBlur={handleLanguageBlur} className="hover:opacity-80 duration-150">
               <GlobeHemisphereEast size={28} weight="duotone" color="#4AA5E0" className="duration-150 group-focus-within:animate-language-spin" />
             </button>
             {
               languageDropdownOpen && (
                 <Dropdown>
-                  <button onClick={() => handleLanguagueChange('en')} className="w-[142px] hover:bg-background-dark/5 duration-150 px-3 py-2 flex items-center gap-3">
+                  <button aria-label="Change language to English" onClick={() => handleLanguagueChange('en')} className="w-[142px] hover:bg-background-dark/5 duration-150 px-3 py-2 flex items-center gap-3">
                     <Image src={usa_flag} alt="USA flag" width={20} />
                     English
                   </button>
-                  <button onClick={() => handleLanguagueChange('pt_br')} className="w-[142px] hover:bg-background-dark/5 duration-150 px-3 py-2 flex items-center gap-3">
+                  <button aria-label="Mudar idioma para Português" onClick={() => handleLanguagueChange('pt_br')} className="w-[142px] hover:bg-background-dark/5 duration-150 px-3 py-2 flex items-center gap-3">
                     <Image src={brazil_flag} alt="Brazil flag" width={20} />
 
                     Português

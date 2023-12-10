@@ -27,7 +27,7 @@ export default function ScrollTo() {
   }, []);
 
   return (
-    <button onClick={scroll} className="w-10 h-10 fixed bottom-10 right-10 z-[100] bg-background-dark rounded-full shadow-lg flex items-center justify-center">
+    <button aria-label="Go to top or bottom" onClick={scroll} className="w-10 h-10 fixed bottom-10 right-10 z-[100] bg-background-dark rounded-full shadow-lg flex items-center justify-center">
       <ArrowUp
         className={`duration-150 text-background-light ${scrollY <= 50 ? "rotate-180" : ""}`}
       />

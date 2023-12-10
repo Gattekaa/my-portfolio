@@ -36,6 +36,10 @@ const config: Config = {
           "0%": { transform: "rotate(0deg)" },
           "100%": { transform: "rotate(360deg)" },
         },
+        "increase-size": {
+          "0%": { transform: "scale(0)" },
+          "100%": { transform: "scale(1)" },
+        },
       },
       animation: {
         "scale-up":
@@ -44,6 +48,8 @@ const config: Config = {
           "fade-in 0.16s cubic-bezier(0.390, 0.575, 0.565, 1.000) both",
         "language-spin":
           "language-spin 1s cubic-bezier(.75,-0.5,0,1.75) both",
+        "increase-size":
+          "increase-size 0.16s cubic-bezier(0.390, 0.575, 0.565, 1.000) both",
       },
     },
   },
