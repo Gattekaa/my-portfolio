@@ -1,11 +1,11 @@
-import Navbar from '@/components/Navbar'
-import PresentationContainer from '@/components/PresentationContainer'
-import ConnectWithMeContainer from '../components/ConnectWithMeContainer'
-import ExploreMyWork from '@/components/ExploreMyWork'
-import Technologies from '@/components/Technologies'
-import Footer from '@/components/Footer'
-import ScrollTo from '@/components/ScrollTo'
-import Script from 'next/script'
+import ExploreMyWork from "@/components/ExploreMyWork";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import PresentationContainer from "@/components/PresentationContainer";
+import ScrollTo from "@/components/ScrollTo";
+import Technologies from "@/components/Technologies";
+import Script from "next/script";
+import ConnectWithMeContainer from "../components/ConnectWithMeContainer";
 
 export default function Home() {
   return (
@@ -28,5 +28,5 @@ export default function Home() {
       <ScrollTo />
       <Footer />
     </main>
-  )
+  );
 }

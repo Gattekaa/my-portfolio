@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Navbar from "@/components/Navbar";
 import Locale from "@/helpers/locale";
 import { NotFoundLocale } from "@/locales/not_found";
@@ -6,7 +6,7 @@ import { ArrowArcLeft } from "@phosphor-icons/react";
 import { useRouter } from "next/navigation";
 
 export default function Custom404() {
-  const { back } = useRouter()
+  const { back } = useRouter();
   return (
     <section className="w-full h-screen flex flex-col">
       <Navbar />
@@ -15,11 +15,15 @@ export default function Custom404() {
         <p className="text-2xl font-medium text-background-dark">
           <Locale item={NotFoundLocale.title} />
         </p>
-        <button onClick={back} className="mt-8 bg-background-dark text-white px-8 py-3 flex gap-4 items-center justify-center hover:bg-transparent border-2 border-transparent duration-150 hover:border-background-dark hover:text-background-dark">
+        <button
+          type="button"
+          onClick={back}
+          className="mt-8 bg-background-dark text-white px-8 py-3 flex gap-4 items-center justify-center hover:bg-transparent border-2 border-transparent duration-150 hover:border-background-dark hover:text-background-dark"
+        >
           <ArrowArcLeft size={28} />
           <Locale item={NotFoundLocale.back} />
         </button>
       </div>
     </section>
-  )
+  );
 }

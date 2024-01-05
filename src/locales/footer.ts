@@ -6,5 +6,5 @@ export const FooterLocale = {
   follow_me: {
     en: "Follow me",
     pt_br: "Me siga",
-  }
-}
+  },
+};

@@ -13,7 +13,7 @@ export default function Locale({ item }: { item: ILocale }) {
   const { language } = React.useContext(LanguageContext);
 
   if (language === "pt_br") {
-    return item.pt_br
+    return item.pt_br;
   }
 
   return item.en;

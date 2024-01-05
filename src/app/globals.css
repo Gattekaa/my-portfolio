@@ -11,6 +11,20 @@
     background-position: 100% 50%;
   }
 }
+
+html,
+body,
+#root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /* Prevents overflow on the x-axis */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+
 .animate-gradient {
   background-image: linear-gradient(45deg, #6bc5f8, #cf59e6);
   background-size: 400% 400%;
@@ -18,10 +32,4 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-}
-
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 75px;
-
 }

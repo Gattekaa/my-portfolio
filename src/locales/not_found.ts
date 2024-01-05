@@ -6,5 +6,5 @@ export const NotFoundLocale = {
   back: {
     en: "Go back",
     pt_br: "Voltar",
-  }
+  },
 };
