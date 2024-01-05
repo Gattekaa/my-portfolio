@@ -7,8 +7,7 @@ export default function ScrollTo() {
   const [scrollY, setScrollY] = useState(0);
 
   const handleScroll = () => {
-    const windowHeight = window.innerHeight;
-    const scrollHeight = document.body.scrollHeight - windowHeight;
+    const scrollHeight = document.body.scrollHeight - window.innerHeight;
     const scrolled = (window.scrollY / scrollHeight) * 100;
     setScrollY(scrolled);
   };
@@ -34,9 +33,8 @@ export default function ScrollTo() {
       className="w-10 h-10 fixed bottom-10 right-10 z-[100] bg-background-dark rounded-full shadow-lg flex items-center justify-center"
     >
       <ArrowUp
-        className={`duration-150 text-background-light ${
-          scrollY <= 50 ? "rotate-180" : ""
-        }`}
+        className={`duration-150 text-background-light ${scrollY <= 50 ? "rotate-180" : ""
+          }`}
       />
     </button>
   );

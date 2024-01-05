@@ -203,10 +203,11 @@ export default function Navbar() {
       </div>
       {navbarOpen && (
         <div
-          className={`lg:hidden animate-scale-up w-full ${navbarOpen
-            ? "absolute block pt-4 pb-8 px-8 lg:px-24 bg-background-light border-b-2 border-b-border-light"
-            : "hidden"
-            }  top-[75%] left-0 lg:flex lg:items-center`}
+          className={`lg:hidden animate-scale-up w-full ${
+            navbarOpen
+              ? "absolute block pt-4 pb-8 px-8 lg:px-24 bg-background-light border-b-2 border-b-border-light"
+              : "hidden"
+          }  top-[75%] left-0 lg:flex lg:items-center`}
         >
           <div className="flex flex-col gap-4 items-center">
             {/* biome-ignore lint/a11y/useValidAnchor: <explanation> */}

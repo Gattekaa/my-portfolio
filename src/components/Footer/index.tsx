@@ -26,7 +26,7 @@ export default function Footer() {
       <div className="justify-between hidden md:flex">
         <motion.a
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1, transition: { delay: .1 } }}
+          whileInView={{ opacity: 1, transition: { delay: 0.1 } }}
           viewport={{ once: true }}
           href={"/"}
           className="font-bold text-xl tracking-tight animate-gradient flex items-center"
@@ -44,7 +44,7 @@ export default function Footer() {
           </motion.h2>
           <motion.a
             initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1, transition: { delay: .2 } }}
+            whileInView={{ opacity: 1, transition: { delay: 0.2 } }}
             viewport={{ once: true }}
             href="/#"
             className="flex gap-2 items-center hover:opacity-80 duration-150"
@@ -53,7 +53,7 @@ export default function Footer() {
           </motion.a>
           <motion.a
             initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1, transition: { delay: .3 } }}
+            whileInView={{ opacity: 1, transition: { delay: 0.3 } }}
             viewport={{ once: true }}
             href={"/#explore-my-work"}
             className="flex gap-2 items-center hover:opacity-80 duration-150"
@@ -62,7 +62,7 @@ export default function Footer() {
           </motion.a>
           <motion.a
             initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1, transition: { delay: .4 } }}
+            whileInView={{ opacity: 1, transition: { delay: 0.4 } }}
             viewport={{ once: true }}
             href={"/#connect-with-me"}
             className="flex gap-2 items-center hover:opacity-80 duration-150"
@@ -71,7 +71,7 @@ export default function Footer() {
           </motion.a>
           <motion.a
             initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1, transition: { delay: .5 } }}
+            whileInView={{ opacity: 1, transition: { delay: 0.5 } }}
             viewport={{ once: true }}
             href={"/#technologies"}
             className="flex gap-2 items-center hover:opacity-80 duration-150"
@@ -90,7 +90,7 @@ export default function Footer() {
           </motion.h2>
           <motion.a
             initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1, transition: { delay: .2 } }}
+            whileInView={{ opacity: 1, transition: { delay: 0.2 } }}
             viewport={{ once: true }}
             target="_blank"
             rel="noreferrer"
@@ -102,7 +102,7 @@ export default function Footer() {
           </motion.a>
           <motion.a
             initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1, transition: { delay: .3 } }}
+            whileInView={{ opacity: 1, transition: { delay: 0.3 } }}
             viewport={{ once: true }}
             target="_blank"
             rel="noreferrer"
@@ -117,7 +117,7 @@ export default function Footer() {
           </motion.a>
           <motion.a
             initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1, transition: { delay: .4 } }}
+            whileInView={{ opacity: 1, transition: { delay: 0.4 } }}
             viewport={{ once: true }}
             target="_blank"
             rel="noreferrer"
@@ -132,7 +132,7 @@ export default function Footer() {
       <div className="flex-col justify-between items-center gap-24 flex md:hidden">
         <motion.a
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1, transition: { delay: .1 } }}
+          whileInView={{ opacity: 1, transition: { delay: 0.1 } }}
           viewport={{ once: true }}
           href={"/"}
           className="font-bold text-xl tracking-tight animate-gradient"
@@ -151,7 +151,7 @@ export default function Footer() {
             </motion.h2>
             <motion.a
               initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1, transition: { delay: .2 } }}
+              whileInView={{ opacity: 1, transition: { delay: 0.2 } }}
               viewport={{ once: true }}
               href="/#"
               className="flex gap-2 items-center hover:opacity-80 duration-150"
@@ -160,7 +160,7 @@ export default function Footer() {
             </motion.a>
             <motion.a
               initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1, transition: { delay: .3 } }}
+              whileInView={{ opacity: 1, transition: { delay: 0.3 } }}
               viewport={{ once: true }}
               href={"/#explore-my-work"}
               className="flex gap-2 items-center hover:opacity-80 duration-150"
@@ -169,7 +169,7 @@ export default function Footer() {
             </motion.a>
             <motion.a
               initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1, transition: { delay: .4 } }}
+              whileInView={{ opacity: 1, transition: { delay: 0.4 } }}
               viewport={{ once: true }}
               href={"/#connect-with-me"}
               className="flex gap-2 items-center hover:opacity-80 duration-150"
@@ -178,7 +178,7 @@ export default function Footer() {
             </motion.a>
             <motion.a
               initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1, transition: { delay: .5 } }}
+              whileInView={{ opacity: 1, transition: { delay: 0.5 } }}
               viewport={{ once: true }}
               href={"/#technologies"}
               className="flex gap-2 items-center hover:opacity-80 duration-150"
@@ -197,7 +197,7 @@ export default function Footer() {
             </motion.h2>
             <motion.a
               initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1, transition: { delay: .2 } }}
+              whileInView={{ opacity: 1, transition: { delay: 0.2 } }}
               viewport={{ once: true }}
               target="_blank"
               rel="noreferrer"
@@ -212,7 +212,7 @@ export default function Footer() {
             </motion.a>
             <motion.a
               initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1, transition: { delay: .3 } }}
+              whileInView={{ opacity: 1, transition: { delay: 0.3 } }}
               viewport={{ once: true }}
               target="_blank"
               rel="noreferrer"
@@ -227,7 +227,7 @@ export default function Footer() {
             </motion.a>
             <motion.a
               initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1, transition: { delay: .4 } }}
+              whileInView={{ opacity: 1, transition: { delay: 0.4 } }}
               viewport={{ once: true }}
               target="_blank"
               rel="noreferrer"

@@ -51,20 +51,19 @@ export default function ProjectItem({
           src={photo}
           fill
           draggable={false}
-          className={`${alterPhoto ? "hover:opacity-0" : "!static"
-            } aspect-video duration-300 z-[10] !h-[416px] !min-h-[416px] object-cover`}
+          className={`${
+            alterPhoto ? "hover:opacity-0" : "!static"
+          } aspect-video duration-300 z-[10] !h-[416px] !min-h-[416px] object-cover`}
           sizes="(max-width: 100%, min-height: 416px)"
           alt="Project image"
         />
         {alterPhoto && (
           <>
-            {
-              href && (
-                <div className="absolute z-[8] w-full h-[416px] flex items-center justify-center bg-background-dark/20 text-slate-200 font-bold text-2xl">
-                  <Locale item={ProjectItemLocale.hoverText} />
-                </div>
-              )
-            }
+            {href && (
+              <div className="absolute z-[8] w-full h-[416px] flex items-center justify-center bg-background-dark/20 text-slate-200 font-bold text-2xl">
+                <Locale item={ProjectItemLocale.hoverText} />
+              </div>
+            )}
             <Image
               src={alterPhoto}
               fill
