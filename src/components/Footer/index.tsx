@@ -17,6 +17,10 @@ import Locale from "@/helpers/locale";
 import { FooterLocale } from "@/locales/footer";
 import { NavigationLocale } from "@/locales/navigation";
 
+// Assets
+import BrandIconBlackGreenLogo from "@/assets/svg/brand_icon_black_green.svg";
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer
@@ -31,7 +35,12 @@ export default function Footer() {
           href={"/"}
           className="font-bold text-xl tracking-tight animate-gradient flex items-center"
         >
-          &lt;Vinicius/&gt;
+          <Image
+            src={BrandIconBlackGreenLogo}
+            alt="Vinicius Gabriel's brand icon"
+            width={80}
+            height={80}
+          />
         </motion.a>
         <section className="flex flex-col gap-4">
           <motion.h2
@@ -137,7 +146,12 @@ export default function Footer() {
           href={"/"}
           className="font-bold text-xl tracking-tight animate-gradient"
         >
-          &lt;Vinicius/&gt;
+          <Image
+            src={BrandIconBlackGreenLogo}
+            alt="Vinicius Gabriel's brand icon"
+            width={80}
+            height={80}
+          />
         </motion.a>
         <div className="w-full flex justify-between">
           <section className="flex flex-col gap-4">

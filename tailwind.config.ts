@@ -9,6 +9,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        primary: {
+          green: "#B1FF2E",
+          lightGreen: "#C4FF61",
+          lightBlack: "#1A1A1A",
+          gold: "#FDF4A3",
+        },
         background: {
           light: "#FFFFFF",
           dark: "#1B1D21",
@@ -46,8 +52,7 @@ const config: Config = {
           "scale-up 0.16s cubic-bezier(0.390, 0.575, 0.565, 1.000) both",
         "fade-in":
           "fade-in 0.16s cubic-bezier(0.390, 0.575, 0.565, 1.000) both",
-        "language-spin":
-          "language-spin 1s cubic-bezier(.75,-0.5,0,1.75) both",
+        "language-spin": "language-spin 1s cubic-bezier(.75,-0.5,0,1.75) both",
         "increase-size":
           "increase-size 0.16s cubic-bezier(0.390, 0.575, 0.565, 1.000) both",
       },

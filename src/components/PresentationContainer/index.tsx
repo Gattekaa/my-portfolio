@@ -21,9 +21,9 @@ export default function PresentationContainer() {
         viewport={{ once: true }}
         className="flex order-2 md:order-none flex-col items-center justify-center text-start px-4 lg:p-24 gap-8 relative"
       >
-        <p className="text-[8vw] leading-none md:text-[3.5vw] font-bold ">
+        <p className="text-[8vw] leading-none md:text-[3.5vw] font-bold text-primary-lightBlack">
           <Locale item={PresentationLocale.copy_parts.first} />{" "}
-          <strong className="animate-gradient font-bold">
+          <strong className="text-primary-green font-bold">
             <Locale item={PresentationLocale.copy_parts.second} />
           </strong>{" "}
           <Locale item={PresentationLocale.copy_parts.third} />
@@ -37,7 +37,7 @@ export default function PresentationContainer() {
             whileInView={{ opacity: 1, scale: 1, transition: { delay: 0.3 } }}
             viewport={{ once: true }}
             href={"#explore-my-work"}
-            className="whitespace-nowrap w-full md:w-fit flex items-center justify-center border-2 duration-150 border-background-dark bg-background-dark hover:bg-transparent hover:text-background-dark text-background-light px-8 py-3"
+            className="whitespace-nowrap w-full md:w-fit flex items-center justify-center border-2 duration-150 border-primary-lightBlack bg-primary-lightBlack hover:bg-transparent hover:text-background-dark text-background-light px-8 py-3"
           >
             <Locale item={PresentationLocale.buttons.see_more} />
           </motion.a>
@@ -46,7 +46,7 @@ export default function PresentationContainer() {
             whileInView={{ opacity: 1, scale: 1, transition: { delay: 0.5 } }}
             viewport={{ once: true }}
             href={"#connect-with-me"}
-            className="whitespace-nowrap w-full md:w-fit flex items-center justify-center duration-150 text-background-dark border-2 border-background-dark px-8 py-3 hover:bg-background-dark hover:text-background-light"
+            className="whitespace-nowrap w-full md:w-fit flex items-center justify-center duration-150 text-primary-lightBlack border-2 border-primary-lightBlack px-8 py-3 hover:bg-primary-lightBlack hover:text-background-light"
           >
             <Locale item={PresentationLocale.buttons.contact_me} />
           </motion.a>

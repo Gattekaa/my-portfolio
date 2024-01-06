@@ -13,6 +13,15 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Vinicius Gabriel - Portfolio",
   description: "Vinicius Gabriel fullstack developer portfolio",
+  icons: [
+    {
+      rel: "icon",
+      url: "/brand_icon_transparent_green.svg",
+      sizes: "any",
+    },
+  ],
+  robots: "index, follow",
+
 };
 
 export default function RootLayout({

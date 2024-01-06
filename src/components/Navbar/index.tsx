@@ -17,6 +17,7 @@ import {
 
 // Components
 import Dropdown from "../Dropdown";
+import { setCookie } from "nookies";
 
 // Contexts
 import { LanguageContext } from "@/contexts/languageContext";
@@ -30,7 +31,7 @@ import Locale from "@/helpers/locale";
 // Assets
 import brazil_flag from "@/assets/svg/brazil_flag.svg";
 import usa_flag from "@/assets/svg/usa_flag.svg";
-import { setCookie } from "nookies";
+import FullBrandBlackGreenLogo from "@/assets/svg/brand_full_logo_transparent_black_green.svg";
 
 export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -55,13 +56,18 @@ export default function Navbar() {
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
-        className="flex items-center flex-shrink-0 text-white mr-6"
+        className="flex items-center flex-shrink-0 text-white mr-6 flex-1"
       >
         <Link
           href={"/"}
-          className="font-bold text-xl tracking-tight animate-gradient"
+          className="font-bold text-xl tracking-tight animate-gradient relative w-full max-w-[180px] md:max-w-[240px] h-[40px]"
         >
-          &lt;Vinicius/&gt;
+          <Image
+            src={FullBrandBlackGreenLogo}
+            fill
+            className="aspect-video"
+            alt="Vinicius Gabriel Fullstack Developer Logo"
+          />
         </Link>
       </motion.div>
       <div className="lg:hidden flex gap-8">
@@ -203,11 +209,10 @@ export default function Navbar() {
       </div>
       {navbarOpen && (
         <div
-          className={`lg:hidden animate-scale-up w-full ${
-            navbarOpen
+          className={`lg:hidden animate-scale-up w-full ${navbarOpen
               ? "absolute block pt-4 pb-8 px-8 lg:px-24 bg-background-light border-b-2 border-b-border-light"
               : "hidden"
-          }  top-[75%] left-0 lg:flex lg:items-center`}
+            }  top-[75%] left-0 lg:flex lg:items-center`}
         >
           <div className="flex flex-col gap-4 items-center">
             {/* biome-ignore lint/a11y/useValidAnchor: <explanation> */}
