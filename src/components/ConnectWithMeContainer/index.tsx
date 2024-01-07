@@ -46,6 +46,7 @@ export default function ConnectWithMeContainer() {
           src={myPhoto}
           fill
           sizes="(max-width: 100%, min-height: 300px)"
+          title="Vinicius Gabriel photo"
           alt="Vinicius Gabriel photo"
         />
       </motion.div>

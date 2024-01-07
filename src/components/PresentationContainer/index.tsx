@@ -15,7 +15,7 @@ import rocketSvg from "@/assets/svg/rocket.svg";
 export default function PresentationContainer() {
   return (
     <section className="w-full md:min-h-[calc(100vh_-_80px)] grid grid-flow-row md:grid-flow-col md:grid-cols-2 md:gap-12 lg:gap-24 pb-24">
-      <motion.div
+      <motion.h1
         initial={{ scale: 0.5, right: "45%", opacity: 0 }}
         whileInView={{ scale: 1, right: 0, opacity: 1 }}
         viewport={{ once: true }}
@@ -51,7 +51,7 @@ export default function PresentationContainer() {
             <Locale item={PresentationLocale.buttons.contact_me} />
           </motion.a>
         </div>
-      </motion.div>
+      </motion.h1>
       <motion.div
         initial={{ scale: 0, left: "45%", opacity: 0 }}
         whileInView={{ scale: 1, left: 0, opacity: 1 }}
@@ -63,6 +63,7 @@ export default function PresentationContainer() {
           sizes="(max-width: 100%)"
           priority
           src={rocketSvg}
+          title="Picture an rocket"
           alt="Picture an rocket"
           fill
         />

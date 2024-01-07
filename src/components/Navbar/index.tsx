@@ -65,7 +65,9 @@ export default function Navbar() {
           <Image
             src={FullBrandBlackGreenLogo}
             fill
+            priority
             className="aspect-video"
+            title="Vinicius Gabriel Fullstack Developer Logo"
             alt="Vinicius Gabriel Fullstack Developer Logo"
           />
         </Link>
@@ -98,7 +100,7 @@ export default function Navbar() {
                 onClick={() => handleLanguagueChange("en")}
                 className="w-[142px] hover:bg-background-dark/5 duration-150 px-3 py-2 flex items-center gap-3"
               >
-                <Image src={usa_flag} alt="USA flag" width={20} />
+                <Image src={usa_flag} alt="USA flag" title="USA flag" width={20} />
                 English
               </button>
               <button
@@ -107,7 +109,7 @@ export default function Navbar() {
                 onClick={() => handleLanguagueChange("pt_br")}
                 className="w-[142px] hover:bg-background-dark/5 duration-150 px-3 py-2 flex items-center gap-3"
               >
-                <Image src={brazil_flag} alt="Brazil flag" width={20} />
+                <Image src={brazil_flag} alt="Brazil flag" title="Brazil flag" width={20} />
                 Português
               </button>
             </Dropdown>
@@ -190,7 +192,7 @@ export default function Navbar() {
                   onClick={() => handleLanguagueChange("en")}
                   className="w-[142px] hover:bg-background-dark/5 duration-150 px-3 py-2 flex items-center gap-3"
                 >
-                  <Image src={usa_flag} alt="USA flag" width={20} />
+                  <Image src={usa_flag} alt="USA flag" title="USA flag" width={20} />
                   English
                 </button>
                 <button
@@ -199,7 +201,7 @@ export default function Navbar() {
                   onClick={() => handleLanguagueChange("pt_br")}
                   className="w-[142px] hover:bg-background-dark/5 duration-150 px-3 py-2 flex items-center gap-3"
                 >
-                  <Image src={brazil_flag} alt="Brazil flag" width={20} />
+                  <Image src={brazil_flag} alt="Brazil flag" title="Brazil flag" width={20} />
                   Português
                 </button>
               </Dropdown>

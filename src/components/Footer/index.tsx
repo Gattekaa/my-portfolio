@@ -38,6 +38,7 @@ export default function Footer() {
           <Image
             src={BrandIconBlackGreenLogo}
             alt="Vinicius Gabriel's brand icon"
+            title="Vinicius Gabriel's brand icon"
             width={80}
             height={80}
           />
@@ -149,6 +150,7 @@ export default function Footer() {
           <Image
             src={BrandIconBlackGreenLogo}
             alt="Vinicius Gabriel's brand icon"
+            title="Vinicius Gabriel's brand icon"
             width={80}
             height={80}
           />
