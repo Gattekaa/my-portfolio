@@ -11,21 +11,21 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Vinicius Gabriel - Portfolio",
-  description: "Vinicius Gabriel fullstack developer portfolio",
+  title: "Vinicius Gabriel - Desenvolvedor FullStack",
+  description: "Vinicius Gabriel Desenvolvedor Fullstack - Transformando ideias em Poderosas Soluções Web",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://my-portfolio-gattekaa.vercel.app/",
-    siteName: "Vinicius Gabriel - Portfolio",
-    title: "Vinicius Gabriel - Portfolio",
-    description: "Vinicius Gabriel fullstack developer portfolio",
+    siteName: "Vinicius Gabriel - Desenvolvedor FullStack",
+    title: "Vinicius Gabriel - Desenvolvedor FullStack",
+    description: "Vinicius Gabriel Desenvolvedor Fullstack - Transformando ideias em Poderosas Soluções Web",
     images: [
       {
         url: "/brand_icon_transparent_green.png",
         width: 800,
         height: 600,
-        alt: "Vinicius Gabriel - Portfolio",
+        alt: "Vinicius Gabriel - Desenvolvedor FullStack",
       },
     ],
   },
