@@ -15,16 +15,18 @@ export const metadata: Metadata = {
   description: "Vinicius Gabriel Desenvolvedor Fullstack - Transformando ideias em Poderosas Soluções Web",
   openGraph: {
     type: "website",
-    locale: "en_US",
+    countryName: "BraSil",
+    locale: "pt_BR",
+    alternateLocale: "en_US",
     url: "https://my-portfolio-gattekaa.vercel.app/",
     siteName: "Vinicius Gabriel - Desenvolvedor FullStack",
     title: "Vinicius Gabriel - Desenvolvedor FullStack",
     description: "Vinicius Gabriel Desenvolvedor Fullstack - Transformando ideias em Poderosas Soluções Web",
     images: [
       {
-        url: "/brand_icon_transparent_green.png",
-        width: 800,
-        height: 600,
+        url: "/brand_background.png",
+        width: 1200,
+        height: 630,
         alt: "Vinicius Gabriel - Desenvolvedor FullStack",
       },
     ],
@@ -32,7 +34,8 @@ export const metadata: Metadata = {
   icons: [
     {
       rel: "icon",
-      url: "/brand_icon_transparent_green.svg",
+      url: "/brand_icon_transparent_green.png",
+      type: "image/png",
       sizes: "any",
     }
   ],
@@ -41,7 +44,10 @@ export const metadata: Metadata = {
       name: "Vinicius Gabriel"
     }
   ],
-
+  category: "Web Development",
+  classification: "Web Development",
+  creator: "Vinicius Gabriel",
+  keywords: "fullstack, frontend, backend, vinicius, gabriel, vinicius gabriel, viniciusgabriel, developer, nextjs, desenvolvedor, design, designer, webdeveloper, webdesigner, web, website, site",
   robots: "index, follow",
 
 };
