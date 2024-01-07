@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: "Vinicius Gabriel fullstack developer portfolio",
     images: [
       {
-        url: "/brand_icon_transparent_green.svg",
+        url: "/brand_icon_transparent_green.png",
         width: 800,
         height: 600,
         alt: "Vinicius Gabriel - Portfolio",
