@@ -55,8 +55,8 @@ export default function ProjectItem({
             alterPhoto ? "hover:opacity-0" : "!static"
           } aspect-video duration-300 z-[10] !h-[416px] !min-h-[416px] object-cover`}
           sizes="(max-width: 100%, min-height: 416px)"
-          title="Project image"
-          alt="Project image"
+          title={`${Locale({ item: title })}`}
+          alt={`${<Locale item={title} />} project image`}
         />
         {alterPhoto && (
           <>

@@ -29,7 +29,6 @@ export const projects = [
       pt_br:
         "Desenvolvido usando Next.js e aprimorado com o estilo fluido do Tailwind CSS no front-end. Nos bastidores, o poder do Node.js, Prisma e JWT se unem para fornecer um back-end robusto e seguro. Uma fusão perfeita de tecnologias para uma experiência excepcional.",
     },
-    href: "https://yure3d.vercel.app",
     photo: portfolio_yure_1,
     alterPhoto: portfolio_yure_2,
   },
