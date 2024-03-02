@@ -4,8 +4,24 @@ import todo_app_1 from "@/assets/todo-app-1.png";
 import todo_app_2 from "@/assets/todo-app-2.png";
 import telecom_1 from "@/assets/telecom-1.png";
 import telecom_2 from "@/assets/telecom-2.png";
+import gatree from "@/assets/gatree.png";
+import gatree_1 from "@/assets/gatree-1.png";
 
 export const projects = [
+  {
+    title: {
+      en: "Gatree",
+      pt_br: "Gatree",
+    },
+    description: {
+      pt_br:
+        "Um sistema de gerenciamento de árvores de links. O sistema permite que o usuário crie árvores com links personalizados e compartilhe com outras pessoas. Sistema feito utilizando as tecnologias mais recentes como: Next.JS, Typescript, Tailwind CSS, Prisma, Node.JS e banco de dados PostgreSQL.",
+      en: "A tree link management system. The system allows the user to create trees with custom links and share with other people. System made using the latest technologies such as: Next.JS, Typescript, Tailwind CSS, Prisma, Node.JS and PostgreSQL database.",
+    },
+    href: "https://gatree.vercel.app/dashboard",
+    photo: gatree,
+    alterPhoto: gatree_1,
+  },
   {
     title: {
       en: "Telecom Management System",
